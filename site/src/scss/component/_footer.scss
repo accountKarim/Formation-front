@@ -1,0 +1,69 @@
+  /* --------------
+      --- footer 
+    -------------*/
+    footer {
+        padding: 1rem 1px;
+        background: #f1f1f1;
+        display: inline-block;
+        width: 100%;
+        section {
+            &:first-child {
+                width: calc(100% / 3 - 8rem);
+                float: left;
+                margin-left: 10px;
+            }
+            &:nth-child(2) {
+                width: calc(100% / 3);
+                float: left;
+            }
+            &:last-child {
+                width: calc(100% / 3 - 8rem);
+                float: left;
+                font-size: 1.8rem;
+                padding: 2rem 0.1rem;
+                & h3 {
+                    font-size: 15px;
+                }
+                & p {
+                    font-size: 1.7rem;
+                    line-height: 2.6rem;
+                }
+            }
+            &.newsletter {
+                .form-group {
+                    display: flex;
+                    input {
+                        outline: none;
+                        font-size: 15px;
+                        padding: 16px 19px;
+                        border: 0.1rem solid #4933a2;
+                        border-radius: 1rem;
+                        margin-bottom: 2.2rem;
+                        background: #ffffff59;
+                        letter-spacing: 0.06rem;
+                        width: calc(100% /2 - 2rem);
+                    }
+                    input[name='prenom'] {
+                        margin-right: 16px;
+                    }
+                    input[name='mail'] {
+                        width: 100%;
+                    }
+                    button {
+                        outline: none;
+                        background: #4a33a5c7;
+                        padding: 2rem 2rem;
+                        border-radius: 1rem;
+                        border: 1px solid #33333300;
+                        color: white;
+                        cursor: pointer;
+                        font-size: 1.8rem;
+                        width: 100%;
+                        &:hover {
+                            opacity: .9;
+                        }
+                    }
+                }
+            }
+        }
+    }

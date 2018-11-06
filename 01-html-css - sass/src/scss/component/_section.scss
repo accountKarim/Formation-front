@@ -1,0 +1,24 @@
+/* --------------------------------
+    --- Section | contenu du site
+----------------------------------*/
+section {
+    float: left;
+    h1 {
+      text-align: center;
+      padding: 2.8rem;
+    }
+    aside {
+      float: left;
+      width: 50%;
+      padding-right: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+    article {
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+      padding: 1rem 0 2.9rem;
+    }
+  }
+  

@@ -1,0 +1,72 @@
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  background: #ffffff40;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+nav:hover {
+  background: white;
+}
+
+nav ul {
+  text-align: center;
+  padding: 0;
+  line-height: 4rem;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  font-size: 1rem;
+  color: black;
+  padding: 0 0 0 1rem;
+  font-weight: 500;
+}
+
+.slider {
+  background: url(../img/projecter.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+section.videos {
+  background: url(../img/nos-videos.jpg);
+  background-position: bottom;
+  background-size: cover;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+section.videos.v2 {
+  background: url(../img/projecter.jpg);
+}
+
+section.photos {
+  background: #8e8e8e0f;
+  padding: 2rem 2rem;
+}
+
+section.photos img {
+  background-size: cover;
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+footer {
+  background: #201815;
+  color: white;
+  padding: 3rem 0;
+}
+/*# sourceMappingURL=style.css.map */

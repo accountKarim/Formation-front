@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Attelier 01 - HTML et CSS</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+
+            <header>
+                <div class="fond">
+                    <a href="#!" class='logo'>
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+            </header>
+
+            <nav>
+                <ul>
+                    <li class="current"><a href="">Accueil</a></li>
+                    <li><a href="">Présentation</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <section>
+                <h1>Adidas une firme allemande</h1>
+                <aside><img src="images/adidas.gif" alt="adidas Chaussure Deerupt Runner"></aside>
+
+                <h3>COLLECTION FOOTBALL STREETSTYLE</h3>
+                <article>
+                    Adidas est une firme allemande fondée en 1949 par Adolf Dassler, spécialisée dans la fabrication d'articles de sport, 
+                    basée à Herzogenaurach en Allemagne. Elle est mondialement connue sous l'appellation « la marque aux trois bandes », 
+                    en raison des trois bandes parallèles qui constituent son logo.<br>
+                </article>
+
+                <h3>COLLECTION FOOTBALL STREETSTYLE</h3>
+                <article>
+                    Adidas est une firme allemande fondée en 1949 par Adolf Dassler, spécialisée dans la fabrication d'articles de sport, 
+                    basée à Herzogenaurach en Allemagne. Elle est mondialement connue sous l'appellation « la marque aux trois bandes », en raison 
+                    des trois bandes parallèles qui constituent son logo.<br>
+                </article>
+
+            </section>
+
+            <footer>
+
+                <section class="gmap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21035.435048454794!2d1.979038940962972!3d48.773692356728894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e683fb61282d95%3A0x40b82c3688c3690!2sTrappes!5e0!3m2!1sfr!2sfr!4v1537794813561" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+
+                <section class="newsletter">
+                    <form action="submit.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="prenom" name="prenom" placeholder="Saisissez votre Prénom">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" id="nom" name="nom" placeholder="Saisissez votre Nom">
+                            </div>
+                        <div class="form-group">
+                            <input type="email" id="mail" name="mail" placeholder="Saisissez votre Email">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">S'inscrire a la newsletter </button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="contact">
+                    <address>
+                    <strong>Nous contacter</strong>
+                    <p>Email: <a href="mailto:contact@adidas.com">contact@adidas.com</a></p>
+                    <p>Téléphone : <a href="tel:0130552658">0130552658</a></p>
+                    <p>15 rue de la Gare,  78190 Trappes</p>
+                    </address>
+                </section>
+
+            </footer>
+
+        </main>
+    </body>
+</html>

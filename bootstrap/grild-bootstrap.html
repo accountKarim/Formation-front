@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>...</title>
+
+    <!-- 1. Bootstrap CSS | Obligatoire -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- 2. Style CSS | Pas obligatoire -->
+    <link rel="stylesheet" href="./dist/css/ma-feuille.min.css">
+
+    <!-- 3. html5shiv | Pas obligatoire -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+
+    <!-- 4. respondJS | Pas obligatoire -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>    
+
+    <style>
+        /* UNIQUEMENT POUR LA DEMONSTRATION -- A NE PAS UTILISER EN PROD */
+        .row>.col, .row>[class^=col-] {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(86,61,124,.15);
+            border: 1px solid rgba(86,61,124,.2);
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+        Le container va inclure l'ensemble 
+        de nos lignes et colonnes.
+        - - - -
+        Bootstrap propose 2 container :
+        .container et .container-fluid
+        cf: https://getbootstrap.com/docs/4.1/layout/overview/
+     -->
+    <div class="container">
+
+        <!-- Création d'une ligne -->
+        <div class="row">
+
+            <!-- 
+                Dans votre ligne, ou rangée, vous pouvez
+                créer plusieurs colonnes, mais ATTENTION,
+                toujours sur la base de 12 colonnes.
+             -->
+
+             <!-- 2 Colonnes côte à côte -->
+             <div class="col">COL 1</div>
+             <div class="col">COL 2</div>
+
+             <!-- Permet de faire un saut de ligne -->
+             <div class="w-100"></div>
+
+             <!-- Je peux préciser le nombre de colonnes -->
+             <div class="col-4">COL-4</div>
+             <div class="col-8">COL-8</div>
+
+             <!-- 3 colonnes côte à côte -->
+             <div class="col-3">COL-3</div>
+             <div class="col-6">COL-9</div>
+             <div class="col-3">COL-3</div>
+
+             <!-- 
+                 Je peux imbriquer mes rangées !
+                 JE PASSE TOUJOURS PAR UN ROW...
+                 On ne met pas des .col dans des .col
+              -->
+              <div class="col-12">
+                  <div class="row">
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <div class="col">COL</div>
+                            <div class="col">COL</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">COL-SM-8</div>
+                  </div>
+              </div>
+
+        </div> <!-- /.row -->
+
+        <!-- 
+            Afin d'avoir un affichage responsive optimisé,
+            bootstrap utilise des prefixes devant le nombre
+            de colonnes.
+            https://getbootstrap.com/docs/4.1/layout/grid/#grid-options
+            - - - -
+                -> Extra Small (xs) : .col
+                -> Small (sm) : .col-sm-
+                -> Medium (md) : .col-md-
+                -> Large (lg) : .col-lg-
+                -> Extra Large (xl) : .col-xl-
+         -->
+
+         <div class="row">
+
+            <!-- Test avec XL -->
+            <div class="col-xl-6">COL-XL-6</div>
+            <div class="col-xl-6">COL-XL-6</div>
+
+            <!-- Test avec LG -->
+            <div class="col-lg-6">COL-LG-6</div>
+            <div class="col-lg-6">COL-LG-6</div>
+
+            <!-- Test avec MD -->
+            <div class="col-md-6">COL-MD-6</div>
+            <div class="col-md-6">COL-MD-6</div>
+
+            <!-- Test avec SM -->
+            <div class="col-sm-6">COL-SM-6</div>
+            <div class="col-sm-6">COL-SM-6</div>
+
+            <!-- Test avec XS -->
+            <div class="col-6">COL-XS-6</div>
+            <div class="col-6">COL-XS-6</div>
+
+         </div> <!-- /.row -->
+
+         <!-- 
+             Vous pouvez préciser pour chaque taille
+             d'écran, le nombre de colonne souhaité.
+          -->
+
+          <div class="row">
+                <div class="col-6 col-sm-3 col-md-4 col-lg-6 col-xl-12">COL 1</div>
+                <div class="col-6 col-sm-9 col-md-8 col-lg-6 col-xl-12">COL 2</div>
+          </div>
+
+          <!-- 
+              Vous pouvez changer l'ordre d'affichage des colonnes
+           -->
+          <div class="row">
+                <div class="col">COL 3</div>
+                <div class="col order-2">COL 4</div>
+                <div class="col order-1">COL 5</div>
+          </div>
+
+    </div> <!-- /.container -->
+
+    <!-- 1. jQuery & Popper JS | Obligatoire -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <!-- 2. Bootstrap JS | Obligatoire -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

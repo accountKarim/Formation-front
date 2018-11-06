@@ -1,0 +1,79 @@
+/* ---------------------------------------------
+    1rem -> 10px Ou font-size:100%; 1rem -> 16px
+------------------------------------------------*/
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color:white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  * {
+    -webkit-box-shadow: border-box;
+            box-shadow: border-box;
+  }
+
+  img {
+    width: 100%;
+  }
+  
+ /* -------------------------------------
+      --- Layout | Mise en page du <main>
+  ---------------------------------------*/
+  main {
+    width: 100%;
+    box-shadow: 0px 1px 8px 0px rgba(222, 222, 222, 0.76);
+    max-width: 50%;
+    background-color: white;
+    margin: 6rem auto;
+    border-radius: 1rem;
+  }
+
+  /* -------------------------------------------------
+      --- header | Mise en page du header et du logo
+  ----------------------------------------------------*/
+
+  header {
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    nav {
+      padding: 6px 0;
+      ul {
+        text-align: right;
+        &.min-nav li {
+          font-size: 1.5rem;
+          padding: 4px;
+          font-weight: 500;
+        }
+        li {
+          display: inline;
+          padding: 1rem;
+          font-size: 1.7rem;
+          font-weight: 600;
+          a {
+            color: black;
+            text-decoration: none;
+            &:hover {
+              transition: .2s;
+               color: #4d148c;
+            }
+            i {
+              color: #4c466f;
+              padding-right: 0.8rem;
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      float: left;
+      width: 47%;
+      & img {
+        width: 34%;
+      }
+    }
+  }

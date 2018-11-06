@@ -1,0 +1,28 @@
+/* ----------------------------
+    --- Menu
+-------------------------------*/
+nav {
+    padding: 6px 0;
+    background: $color-secondary;
+    ul {
+      padding: 0;
+      text-align: center;
+      li {
+        display: inline;
+        padding: 0 47px;
+        a {
+          text-decoration: none;
+          font-size: 2rem;
+          text-transform: uppercase;
+          color: $color-primary;
+          &:hover {
+            color: #ffffffb0;
+          }
+        }
+        &.current a {
+          color: #222222f0;
+          font-weight: 600;
+        }
+      }    
+    }
+  }

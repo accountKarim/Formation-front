@@ -1,0 +1,57 @@
+// Google font Roboto Condensed
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,500,600,700i');
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/fond.jpg);
+  font-family: 'Roboto Condensed', sans-serif;
+  &.bg2 {
+    background-image: url(../img/fond2.jpg);
+  }
+}
+  
+img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+  /* ------------------------------
+        --- Layout | Mise en page
+    -------------------------------*/
+  main {
+    width: 100%;
+    max-width: 66%;
+    margin: 0 auto;
+    .info {
+        margin-top: 3rem;
+        letter-spacing: 0.02rem;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        line-height: .4rem;
+    }
+  }

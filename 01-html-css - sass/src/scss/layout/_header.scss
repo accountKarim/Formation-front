@@ -1,0 +1,57 @@
+/* ---------------------------------------------
+    1rem -> 10px Ou font-size:100%; 1rem -> 16px
+------------------------------------------------*/
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: $color-secondary;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  * {
+    -webkit-box-shadow: border-box;
+            box-shadow: border-box;
+  }
+  
+  /* ----------------------------
+      --- Layout | Mise en page
+  -------------------------------
+  
+      1 - Je souhaite définir la largeur de ma page à 960px
+      2 - Je souhaite que mon contenu soit centré au milieu
+      3 - Le fond doit être de couleur blanche
+      4 - Je souhaite rajouter une marge top/bottom de 40px
+      5 - Avec la propriété border-radius, ajoutez un arrondi de 5px
+      6 - Grâce à box-shadow, ajoutez une ombre légère autour du "main"
+  
+  */
+  main {
+    width: 960px;
+    background-color: $color-primary;
+    margin: 10rem auto;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+/* ------------------------------------------------
+    --- Logo | mise en page du header et du logo
+-------------------------------------------------*/
+header {
+  background: $color-secondary;
+  .fond {
+    background: url(../images/fond.png);
+    background-size: cover;
+    opacity: .9;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    a {
+      display: inline-block;
+      margin: 3rem;
+      img {
+        width: 25rem;
+      }
+    }
+  }
+}

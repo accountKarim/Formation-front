@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+//  -- inportr mes variables du fichier _variables.scss
+// @import 'helpers/variables';
+
+// -- inporte ma base base.scss
+@import 'base/base';
+
+// -- inporter le layout header
+@import 'layout/header';
+
+// -- inporter ma banniére 
+@import 'component/bannieres';
+
+// -- inporter la section 
+@import 'component/sections';
+
+// -- inporter la partenaire 
+@import 'component/partenaire';
+
+// -- inporter le footer 
+@import 'component/footer';
+
+/*# sourceMappingURL=styles.css.map */

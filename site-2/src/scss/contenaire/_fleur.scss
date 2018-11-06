@@ -1,0 +1,74 @@
+  /* ------------------------------
+        --- section fleur
+    -------------------------------*/
+    .fleur {
+        background-color: #ff3026;
+        text-align: center;
+        h6 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #ffffffdb;
+            padding: .6rem;
+            letter-spacing: .08rem;
+        }
+        img {
+            width: 24%;
+            margin-top: -20px;
+            position: relative;
+        }
+    }
+
+    /* ------------------------------
+        --- section bas de page
+    -------------------------------*/
+    .bas {
+        background-image: radial-gradient(circle,#ffffffeb, #febfba);
+        height: 10.9rem;
+        margin-bottom: 7rem;
+        &._mb7 {
+            height: 3.4rem;
+            margin-bottom: 3rem;
+        }
+        p {
+            margin: 0;
+            text-align: center;
+            padding-top: 1rem;
+            line-height: 1.5rem;
+            span {
+                color: #ff1300;
+            }
+        }
+        .btn {
+            text-align: center;
+            margin-top: 2rem;
+            .fleche-left {
+                transform: rotate(180deg);
+            }
+            & a {
+                position: relative;
+                margin: 0 5rem;
+                background: linear-gradient(#fe8882, #fd3327);
+                padding: 0.8rem 2rem;
+                border-bottom-right-radius: .7rem;
+                border-top-left-radius: .7rem;
+                color: white;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                &:hover {
+                    transition-delay: .2s;
+                    background: linear-gradient(#fd3327, #fe8882);
+                }
+                & img {
+                    position: absolute;
+                    width: 2rem;
+                    margin-top: 1.5rem;
+                    right: 1rem;
+                }
+            }
+            img {
+                width: 11%;
+                vertical-align: middle;
+            }
+        }
+    }

@@ -1,0 +1,33 @@
+  /* ------------------------------------------------
+      --- Banniére | Mise en page de la banniére
+  --------------------------------------------------*/
+
+  section {
+        overflow: hidden;
+        padding: 20px;
+        &.font-color {
+            background: #02071a0a;
+        }
+      aside {
+            float: left;
+            width: 50%;
+      }
+      article {
+            float: left;
+            width: 50%;
+        h3 {
+            margin-top: 0;
+            padding: 0 2rem;
+            line-height: 1.6;
+            font-size: 2rem;
+            color: #4d148c;
+        }
+        p {
+            padding: 0 2rem;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            font-family: sans-serif;
+            color: #000018d9;
+        }
+      }
+  }

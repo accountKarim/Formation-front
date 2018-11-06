@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenue chez FedEx</title>
+        <link rel="stylesheet" href="dist/css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+
+            <header>
+                <!-- Message de bienvenue -->
+                <p>Bienvenue chez FedEx</p>
+
+                <!-- Mini menu pour permettre au visiteurs de me contacter ou de se connecter ou site -->
+                <nav>
+                   <ul class="min-nav">
+                       <li><a href=""><i class="fas fa-user"></i>Mon compte</a></li>
+                       <li><a href=""><i class="fas fa-truck-loading"></i>Suivi</a></li>
+                       <li><a href=""><i class="fas fa-envelope-open"></i>Contactez-nous</a></li>
+                   </ul>
+                </nav>
+
+                <!-- Logo du site -->
+                <a href="#!" class='logo'>
+                    <img src="dist/images/logo.png" alt="logo">
+                </a>
+
+                <!-- Menu général -->
+                <nav class="menu">
+                   <ul>
+                       <li><a href="" class="curent">Accueil</a></li>
+                       <li><a href="">Points de services</a></li>
+                       <li><a href="">Tarifs et éxpediation</a></li>
+                   </ul>
+                </nav>
+            </header>
+
+            <!-- banniere de 100% -->
+            <div class="banniere">
+                <div class="image-banniere" style="background-image: url(dist/images/banniere.jpg)"></div>
+            </div>
+
+            <!-- Article primaire -->
+            <section>
+                <aside><img src="dist/images/camion.png" alt="Camion FedEx"></aside>
+
+                <article>
+                    <h3>Solutions d’expédition flexibles à l’international pour vos plis et colis légers</h3>
+                    <p>Lorsque vous êtes concentrés sur votre travail, gérer des envois ne doit pas devenir une préoccupation. Chez FedEx, nous vous proposons un service fiable d’expédition de colis à l’international afin de vous assurer une parfaite tranquillité d’esprit.<p>
+                </article>
+            </section>
+
+            <!-- Article secandere -->
+            <section class="font-color">
+                <article>
+                    <h3>Avec la nouvelle app FedEx,vous pouvez suivre vos envois</h3>
+                    <p>Envoi de documents ou d’une pièce mécanique, service économique ou livraison urgente... Vous pouvez compter sur nous : notre gamme d’options et d’emballages gratuits sont conçus pour vous faciliter la vie. De plus, nous mettons à votre disposition une suite d’outils en ligne.<p>
+                </article>
+
+                <aside><img src="dist/images/camion2.png" alt="Camion FedEx"></aside>
+            </section>
+
+            <!-- Listes de nos partenaires -->
+            <div class="partenaire">
+                <h3>Découvrez nos partenaires</h3>
+                <ul>
+                    <li><img src="dist/images/amazon.png" alt="Logo amazon"></li>
+                    <li><img src="dist/images/cdiscount.png" alt="Logo cdiscount"></li>
+                    <li><img src="dist/images/privee.png" alt="Logo vente privee"></li>
+                </ul>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <!-- Google map -->
+                <section class="gmap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.759323825145!2d1.9728451156718172!3d48.786484879280415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e68476a3342c9b%3A0x813cbe0380e6bf9d!2sFedex+Express+France!5e0!3m2!1sfr!2sfr!4v1538052454053" width="257" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+
+                <!-- Newsletter -->
+                <section class="newsletter">
+                    <form action="submit.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                            <input type="text" id="nom" name="nom" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="mail" name="mail" placeholder="Saisissez votre Email">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">S'inscrire a la newsletter </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- contact -->
+                <section class="contact">
+                    <address>
+                    <strong>Nous contacter</strong>
+                    <h3>Federal Express International</h3>
+                    <p>Email: <a href="mailto:contact@adidas.com">contact@fedex.com</a></p>
+                    <p>Téléphone : <a href="tel:0130552658">0 820 12 38 00</a></p>
+                    <p>63 Boulevard Haussmann, 75008 Paris</p>
+                    </address>
+                </section>
+
+            </footer>
+
+        </main>
+    </body>
+</html>

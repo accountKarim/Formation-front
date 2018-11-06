@@ -1,0 +1,21 @@
+section {
+    &.videos {
+        background: url(../img/nos-videos.jpg);
+        background-position: bottom;
+        background-size: cover;
+        padding: 2rem 1rem;
+        width: 100%;
+        &.v2 {
+            background: url(../img/projecter.jpg);
+        }
+    }
+    &.photos {
+        background: #8e8e8e0f;
+        padding: 2rem 2rem;
+        img {
+            background-size: cover;
+            width: 100%;
+            margin: 0 0 2rem 0;
+        }
+    }
+}
